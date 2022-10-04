@@ -3,6 +3,7 @@ import check as ch
 check_text = '!가르치기 '
 start_list = []
 end_list = []
+similar_value = 0.7
 
 while True:
     message = input()
@@ -33,7 +34,7 @@ while True:
 
     check = False
     for i in range(len(start_list)-1, -1, -1):
-        if ch.Similarity_Check(start_list[i], message) > 0.7:
+        if ch.Similarity_Check(start_list[i], message) > similar_value:
             result = end_list[i]
             print(result)
             check = True
