@@ -11,4 +11,4 @@ def Similarity_Check(answer, input):
     similar = sm.ratio()
     return similar
 
-print(Similarity_Check('안녕하세요','안녕하새요'))
+# print(Similarity_Check('안녕','안녕?'))
